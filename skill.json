@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multi-brand-cloud-kitchen-operating-system-pos-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-brand cloud kitchen operating system (OS) and unified Kitchen Display System (KDS) optimizing shared inventory and cook times.",
+  "author": "genpark",
+  "category": "foodtech",
+  "tags": [
+    "cloud-kitchen",
+    "virtual-brands",
+    "kitchen-pos",
+    "kds-dispatch",
+    "rebel-foods"
+  ],
+  "inputs": {
+    "kitchen_hub_id": {
+      "type": "string"
+    },
+    "incoming_orders_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "kitchen_orchestration_id": {
+      "type": "string"
+    },
+    "kitchen_hub": {
+      "type": "string"
+    },
+    "average_cook_to_dispatch_mins": {
+      "type": "number"
+    },
+    "raw_ingredient_shared_utilization_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
